@@ -10,6 +10,10 @@ namespace NKCraddock.AmazonItemLookupTests.TestHelpers
         {
             return GetTestData("ItemLookupResponse.Large.xml");
         }
+        public static string GetItemLookupResponseMultipleIds()
+        {
+            return GetTestData("ItemLookupResponse.Multiple.xml");
+        }
 
         public static string GetCartCreate()
         {

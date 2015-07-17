@@ -5,6 +5,7 @@ using NKCraddock.AmazonItemLookup.Client;
 using NKCraddock.AmazonItemLookup.Client.Operations;
 using NKCraddock.AmazonItemLookup.Client.Responses;
 using NKCraddock.AmazonItemLookupTests.TestHelpers;
+using System.Collections.Generic;
 
 namespace NKCraddock.AmazonItemLookupTests.Client
 {
@@ -40,6 +41,57 @@ namespace NKCraddock.AmazonItemLookupTests.Client
         }
 
         [TestMethod]
+        public void ItemLookup_WithMultipleIds()
+        {
+            const string ITEM1_ASIN = "B00DFFT76U";
+            const string ITEM1_TITLE = "Pampers Swaddlers Diapers Size 3 Economy Pack Plus 162 Count";
+            const int ITEM1_OFFER_COUNT = 1;
+            const string ITEM2_ASIN = "B0015XGNEI";
+            const string ITEM2_TITLE = "Hamilton Beach 2 Slice Cool Touch Toaster";
+            const int ITEM2_OFFER_COUNT = 2;
+
+            GetItemLookupResponseMultipleIds();
+            var items = api.ItemLookupByAsin(new ItemLookupRequestInfo()
+            {
+                ItemIds = new List<string>() { ITEM1_ASIN, ITEM2_ASIN }
+            });
+
+            Assert.IsNotNull(items);
+            Assert.AreEqual(2, items.Count);
+            //Verify first item data
+            Assert.AreEqual<string>(ITEM1_ASIN, items[0].ASIN);
+            Assert.AreEqual<string>(ITEM1_TITLE, items[0].ItemAttributes["Title"]);
+            Assert.AreEqual<int>(ITEM1_OFFER_COUNT, items[0].Offers.Count);
+
+            //Verify second item data
+            Assert.AreEqual<string>(ITEM2_ASIN, items[1].ASIN);
+            Assert.AreEqual<string>(ITEM2_TITLE, items[1].ItemAttributes["Title"]);
+            Assert.AreEqual<int>(ITEM2_OFFER_COUNT, items[1].Offers.Count);
+
+        }
+        [TestMethod]
+        public void ItemLookup_WithMultipleIds_Offers()
+        {
+            const string ITEM1_ASIN = "B00DFFT76U";
+            const string ITEM2_ASIN = "B0015XGNEI";
+          
+            GetItemLookupResponseMultipleIds();
+            var items = api.ItemLookupByAsin(new ItemLookupRequestInfo()
+            {
+                ItemIds = new List<string>() { ITEM1_ASIN, ITEM2_ASIN }
+            });
+
+            Assert.IsNotNull(items);
+            Assert.AreEqual(2, items.Count);
+            Assert.AreEqual<int>(2, items[1].Offers.Count);
+            Assert.AreEqual(AwsItemCondition.New, items[1].Offers[0].Condition);
+            Assert.AreEqual(21, items[1].Offers[0].Amount);
+            Assert.AreEqual("Amazon.com", items[1].Offers[0].Merchant);
+            Assert.AreEqual("$21.00", items[1].Offers[0].FormattedPrice);
+            Assert.AreEqual("$3.99", items[1].Offers[0].FormattedSavedPrice);
+        }
+
+        [TestMethod]
         public void MyTestMethod()
         {
             WithCartCreateResponse();
@@ -48,6 +100,12 @@ namespace NKCraddock.AmazonItemLookupTests.Client
 
             Assert.IsNotNull(cart);
             Assert.AreEqual<int>(1, cart.CartItems.Count);
+        }
+
+        private void GetItemLookupResponseMultipleIds()
+        {
+            string responseText = AwsTestHelper.GetItemLookupResponseMultipleIds();
+            communicatorMock.Setup(x => x.GetResponseFromUrl(It.IsAny<string>())).Returns(responseText);
         }
 
         private void WithItemLookupResponseLarge()

@@ -3,29 +3,28 @@ using NKCraddock.AmazonItemLookup.Client.Responses;
 
 namespace NKCraddock.AmazonItemLookup.Client.Operations
 {
-    public class ItemLookupOperation : IAwsOperation<AwsItem>
+    public class ItemLookupOperation : IAwsOperation<List<AwsItem>>
     {
         Dictionary<string, string> requestArgs;
-
-        public ItemLookupOperation(string asin)
+        public ItemLookupOperation(ItemLookupRequestInfo requestInfo)
         {
             requestArgs = new Dictionary<string, string>
             {
                 { "Operation", "ItemLookup" },
-                { "ResponseGroup", "Large" },
-                { "ItemId", asin }
+                { "ResponseGroup", string.Join(",",requestInfo.ResponseGroups) },
+                { "Condition", requestInfo.Condition},
+                { "ItemId", string.Join(",", requestInfo.ItemIds) }
             };
         }
-
         public Dictionary<string, string> GetRequestArguments()
         {
             return requestArgs;
         }
 
-        public AwsItem GetResultsFromXml(string xml)
+        public List<AwsItem> GetResultsFromXml(string xml)
         {
             var itemLookupResponse = new ItemLookupResponse(xml);
-            return itemLookupResponse.ToAwsItem();
+            return itemLookupResponse.ToAwsItems();
         }
     }
 }

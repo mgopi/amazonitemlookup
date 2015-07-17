@@ -18,7 +18,7 @@ namespace NKCraddock.AmazonItemLookup
         public double? ListPrice { get; set; }
         public double? OfferPrice { get; set; }
         public double? LowestOfferPrice { get; set; }
-
+        public List<AwsOffer> Offers { get; set; }
         public AwsImageSet PrimaryImageSet
         {
             get

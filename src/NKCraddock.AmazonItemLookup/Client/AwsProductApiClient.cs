@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NKCraddock.AmazonItemLookup.Client.Operations;
 
 namespace NKCraddock.AmazonItemLookup.Client
@@ -27,8 +28,17 @@ namespace NKCraddock.AmazonItemLookup.Client
 
         public AwsItem ItemLookupByAsin(string asin)
         {
-            var operation = new ItemLookupOperation(asin);
-            return Get<AwsItem>(operation);
+            var operation = new ItemLookupOperation(new ItemLookupRequestInfo()
+            {
+                ItemIds = new List<string> { asin }
+            });
+            return (Get<List<AwsItem>>(operation)).FirstOrDefault();
+        }
+
+        public List<AwsItem> ItemLookupByAsin(ItemLookupRequestInfo requestInfo)
+        {
+            var operation = new ItemLookupOperation(requestInfo);
+            return Get<List<AwsItem>>(operation);
         }
 
         public AwsCart CreateCart(params CartItem[] items)

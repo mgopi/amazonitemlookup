@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" ?>
+<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0)" />
+    </HTTPHeaders>
+    <RequestId>99deb410-b581-470d-bbb7-2015212a4fdc</RequestId>
+    <Arguments>
+      <Argument Name="AWSAccessKeyId" Value="AKIAJ2MKZTMJQFWXRC5Q" />
+      <Argument Name="AssociateTag" Value="czwhalerts-20" />
+      <Argument Name="Condition" Value="All" />
+      <Argument Name="IdType" />
+      <Argument Name="ItemId" Value="B00DFFT76U,B0015XGNEI" />
+      <Argument Name="Operation" Value="ItemLookup" />
+      <Argument Name="ResponseGroup" Value="ItemAttributes,OfferFull" />
+      <Argument Name="Service" Value="AWSECommerceService" />
+      <Argument Name="Timestamp" Value="2015-07-16T05:25:13.000Z" />
+      <Argument Name="Version" Value="2011-08-01" />
+      <Argument Name="Signature" Value="zUGpttVLp0gPxXQ5Yp52d2DBhPQarB6gpad5FUMKQI0=" />
+    </Arguments>
+    <RequestProcessingTime>0.0422790000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <Condition>All</Condition>
+        <IdType>ASIN</IdType>
+        <ItemId>B00DFFT76U</ItemId>
+        <ItemId>B0015XGNEI</ItemId>
+        <ResponseGroup>ItemAttributes</ResponseGroup>
+        <ResponseGroup>OfferFull</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+    </Request>
+    <Item>
+      <ASIN>B00DFFT76U</ASIN>
+      <ParentASIN>B00V6X5ERY</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Pampers-Swaddlers-Diapers-Economy-Count/dp/B00DFFT76U%3Fpsc%3D1%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00DFFT76U</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Pampers-Swaddlers-Diapers-Economy-Count/dp/tech-data/B00DFFT76U%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB00DFFT76U%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB00DFFT76U%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB00DFFT76U%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B00DFFT76U%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B00DFFT76U%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B00DFFT76U%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Health and Beauty</Binding>
+        <Brand>Pampers</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>10037000863844</CatalogNumberListElement>
+          <CatalogNumberListElement>PG-5759</CatalogNumberListElement>
+        </CatalogNumberList>
+        <EAN>0037000863847</EAN>
+        <EANList>
+          <EANListElement>0037000863847</EANListElement>
+        </EANList>
+        <Feature>Now available through size 5.</Feature>
+        <Feature>Pampers softest diaper ever</Feature>
+        <Feature>Color-changing wetness indicatorThere is a yellow line that starts in the front of the diaper and goes to the back.</Feature>
+        <Feature>The #1 choice of hospitals* (*based on sales data)</Feature>
+        <Feature>Earn Pampers Rewards points with every Pampers purchase</Feature>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">944</Height>
+          <Length Units="hundredths-inches">1494</Length>
+          <Weight Units="hundredths-pounds">1112</Weight>
+          <Width Units="hundredths-inches">1819</Width>
+        </ItemDimensions>
+        <Label>Pampers</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>5160</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$51.60</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Pampers</Manufacturer>
+        <Model>NA</Model>
+        <MPN>NA</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">940</Height>
+          <Length Units="hundredths-inches">1810</Length>
+          <Weight Units="hundredths-pounds">1115</Weight>
+          <Width Units="hundredths-inches">1460</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>NA</PartNumber>
+        <ProductGroup>Health and Beauty</ProductGroup>
+        <ProductTypeName>HEALTH_PERSONAL_CARE</ProductTypeName>
+        <PublicationDate>2013-12-05</PublicationDate>
+        <Publisher>Pampers</Publisher>
+        <ReleaseDate>2013-09-09</ReleaseDate>
+        <Size>size_3</Size>
+        <Studio>Pampers</Studio>
+        <Title>Pampers Swaddlers Diapers Size 3 Economy Pack Plus 162 Count</Title>
+        <UPC>037000863847</UPC>
+        <UPCList>
+          <UPCListElement>037000863847</UPCListElement>
+        </UPCList>
+      </ItemAttributes>
+      <OfferSummary>
+        <LowestNewPrice>
+          <Amount>4358</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$43.58</FormattedPrice>
+        </LowestNewPrice>
+        <TotalNew>34</TotalNew>
+        <TotalUsed>0</TotalUsed>
+        <TotalCollectible>0</TotalCollectible>
+        <TotalRefurbished>0</TotalRefurbished>
+      </OfferSummary>
+      <Offers>
+        <TotalOffers>1</TotalOffers>
+        <TotalOfferPages>1</TotalOfferPages>
+        <MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B00DFFT76U%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB00DFFT76U</MoreOffersUrl>
+        <Offer>
+          <Merchant>
+            <Name>***** PRIME DAY SPECIAL LIMITED SUPPLIES ******</Name>
+          </Merchant>
+          <OfferAttributes>
+            <Condition>New</Condition>
+          </OfferAttributes>
+          <OfferListing>
+            <OfferListingId>7FYgWRyPq9MMfjBvA5mxPl96gQd8RR65d0wC9WvtPutPpZmWJTnfTgGqX3mnh94cnkfPoHK842%2FrQDOjPuXcScTHZi3vjcS1z48tuV7ws5pxz4m1s1nPV2iH10MrMXTSah%2FrBijm6szzytdXjUQ2aw%3D%3D</OfferListingId>
+            <Price>
+              <Amount>4358</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$43.58</FormattedPrice>
+            </Price>
+            <AmountSaved>
+              <Amount>802</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$8.02</FormattedPrice>
+            </AmountSaved>
+            <PercentageSaved>16</PercentageSaved>
+            <Availability>Usually ships in 1-2 business days</Availability>
+            <AvailabilityAttributes>
+              <AvailabilityType>now</AvailabilityType>
+              <MinimumHours>24</MinimumHours>
+              <MaximumHours>48</MaximumHours>
+            </AvailabilityAttributes>
+            <IsEligibleForSuperSaverShipping>0</IsEligibleForSuperSaverShipping>
+          </OfferListing>
+        </Offer>
+      </Offers>
+    </Item>
+    <Item>
+      <ASIN>B0015XGNEI</ASIN>
+      <ParentASIN>B00QN7AC1Q</ParentASIN>
+      <DetailPageURL>http://www.amazon.com/Hamilton-Beach-Slice-Touch-Toaster/dp/B0015XGNEI%3Fpsc%3D1%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0015XGNEI</DetailPageURL>
+      <ItemLinks>
+        <ItemLink>
+          <Description>Technical Details</Description>
+          <URL>http://www.amazon.com/Hamilton-Beach-Slice-Touch-Toaster/dp/tech-data/B0015XGNEI%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Baby Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/baby/add-item.html%3Fasin.0%3DB0015XGNEI%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wedding Registry</Description>
+          <URL>http://www.amazon.com/gp/registry/wedding/add-item.html%3Fasin.0%3DB0015XGNEI%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Add To Wishlist</Description>
+          <URL>http://www.amazon.com/gp/registry/wishlist/add-item.html%3Fasin.0%3DB0015XGNEI%26SubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>Tell A Friend</Description>
+          <URL>http://www.amazon.com/gp/pdp/taf/B0015XGNEI%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Customer Reviews</Description>
+          <URL>http://www.amazon.com/review/product/B0015XGNEI%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+        <ItemLink>
+          <Description>All Offers</Description>
+          <URL>http://www.amazon.com/gp/offer-listing/B0015XGNEI%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</URL>
+        </ItemLink>
+      </ItemLinks>
+      <ItemAttributes>
+        <Binding>Kitchen</Binding>
+        <Brand>Hamilton Beach</Brand>
+        <CatalogNumberList>
+          <CatalogNumberListElement>PS-22121</CatalogNumberListElement>
+        </CatalogNumberList>
+        <Color>Black</Color>
+        <Department>Small Appliances</Department>
+        <EAN>0680693063959</EAN>
+        <EANList>
+          <EANListElement>0680693063959</EANListElement>
+          <EANListElement>0115970722538</EANListElement>
+          <EANListElement>0168141481789</EANListElement>
+          <EANListElement>0763615732222</EANListElement>
+          <EANListElement>0040094221219</EANListElement>
+        </EANList>
+        <Feature>Wide 1.5" slots fit thick bagels, waffles &amp; hand-sliced bread</Feature>
+        <Feature>Multi toasting functions</Feature>
+        <Feature>Cool-touch exterior</Feature>
+        <Feature>Automatic toast boost</Feature>
+        <Feature>Convenient crumb tray</Feature>
+        <Format>CD-ROM</Format>
+        <HardwarePlatform>Pc</HardwarePlatform>
+        <IsAutographed>0</IsAutographed>
+        <IsMemorabilia>0</IsMemorabilia>
+        <ItemDimensions>
+          <Height Units="hundredths-inches">800</Height>
+          <Length Units="hundredths-inches">950</Length>
+          <Weight Units="pounds">4.38</Weight>
+          <Width Units="hundredths-inches">1300</Width>
+        </ItemDimensions>
+        <Label>Hamilton Beach</Label>
+        <Languages>
+          <Language>
+            <Name>English</Name>
+            <Type>Unknown</Type>
+          </Language>
+        </Languages>
+        <ListPrice>
+          <Amount>2499</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$24.99</FormattedPrice>
+        </ListPrice>
+        <Manufacturer>Hamilton Beach</Manufacturer>
+        <Model>22121</Model>
+        <MPN>22121</MPN>
+        <NumberOfItems>1</NumberOfItems>
+        <OperatingSystem>Windows</OperatingSystem>
+        <PackageDimensions>
+          <Height Units="hundredths-inches">810</Height>
+          <Length Units="hundredths-inches">1400</Length>
+          <Weight Units="hundredths-pounds">344</Weight>
+          <Width Units="hundredths-inches">900</Width>
+        </PackageDimensions>
+        <PackageQuantity>1</PackageQuantity>
+        <PartNumber>22121</PartNumber>
+        <Platform>Windows</Platform>
+        <ProductGroup>Kitchen</ProductGroup>
+        <ProductTypeName>KITCHEN</ProductTypeName>
+        <Publisher>Hamilton Beach</Publisher>
+        <Size>2 Slice</Size>
+        <SKU>DNH-DH22121</SKU>
+        <Studio>Hamilton Beach</Studio>
+        <Title>Hamilton Beach 2 Slice Cool Touch Toaster</Title>
+        <UPC>763615732222</UPC>
+        <UPCList>
+          <UPCListElement>763615732222</UPCListElement>
+          <UPCListElement>168141481789</UPCListElement>
+          <UPCListElement>680693063959</UPCListElement>
+          <UPCListElement>040094221219</UPCListElement>
+          <UPCListElement>115970722538</UPCListElement>
+        </UPCList>
+        <Warranty>Comes with Manufacturer Warranty.</Warranty>
+      </ItemAttributes>
+      <OfferSummary>
+        <LowestNewPrice>
+          <Amount>2100</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$21.00</FormattedPrice>
+        </LowestNewPrice>
+        <LowestUsedPrice>
+          <Amount>2299</Amount>
+          <CurrencyCode>USD</CurrencyCode>
+          <FormattedPrice>$22.99</FormattedPrice>
+        </LowestUsedPrice>
+        <TotalNew>56</TotalNew>
+        <TotalUsed>1</TotalUsed>
+        <TotalCollectible>0</TotalCollectible>
+        <TotalRefurbished>0</TotalRefurbished>
+      </OfferSummary>
+      <Offers>
+        <TotalOffers>2</TotalOffers>
+        <TotalOfferPages>1</TotalOfferPages>
+        <MoreOffersUrl>http://www.amazon.com/gp/offer-listing/B0015XGNEI%3FSubscriptionId%3DAKIAJ2MKZTMJQFWXRC5Q%26tag%3Dczwhalerts-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D386001%26creativeASIN%3DB0015XGNEI</MoreOffersUrl>
+        <Offer>
+          <Merchant>
+            <Name>Amazon.com</Name>
+          </Merchant>
+          <OfferAttributes>
+            <Condition>New</Condition>
+          </OfferAttributes>
+          <OfferListing>
+            <OfferListingId>4ew08A94f%2BdM6CkU1%2Bfa9NN29hFMtJKta3S1o6nhaaLwNajooalzAjvw%2Bb9jKxMYb7%2Bi6lUjHf8UMcWC3rXEkrWUYoV5j2%2FEKEF8ePenijxULQ%2FX%2BIJiIQ%3D%3D</OfferListingId>
+            <Price>
+              <Amount>2100</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$21.00</FormattedPrice>
+            </Price>
+            <AmountSaved>
+              <Amount>399</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$3.99</FormattedPrice>
+            </AmountSaved>
+            <PercentageSaved>16</PercentageSaved>
+            <Availability>Usually ships in 24 hours</Availability>
+            <AvailabilityAttributes>
+              <AvailabilityType>now</AvailabilityType>
+              <MinimumHours>0</MinimumHours>
+              <MaximumHours>0</MaximumHours>
+            </AvailabilityAttributes>
+            <IsEligibleForSuperSaverShipping>1</IsEligibleForSuperSaverShipping>
+          </OfferListing>
+        </Offer>
+        <Offer>
+          <Merchant>
+            <Name>guttovilles</Name>
+          </Merchant>
+          <OfferAttributes>
+            <Condition>Used</Condition>
+          </OfferAttributes>
+          <OfferListing>
+            <OfferListingId>zZCUICMGmOA9vhqKyPHhyhpVxxzPnyL1b5Nv5J3v5iM%2Bmv0T0kQmw07zg%2BVhopOP0Vhtx4dL4XTNF36vnwZGwdCjKn0CQLmYN5j1sy%2BHbRZYXQm5J0q4iIWqcwVXMbxnVMZUGwVTGFJhl9gXznhjfA%3D%3D</OfferListingId>
+            <Price>
+              <Amount>2299</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$22.99</FormattedPrice>
+            </Price>
+            <AmountSaved>
+              <Amount>200</Amount>
+              <CurrencyCode>USD</CurrencyCode>
+              <FormattedPrice>$2.00</FormattedPrice>
+            </AmountSaved>
+            <PercentageSaved>8</PercentageSaved>
+            <Availability>Usually ships in 1-2 business days</Availability>
+            <AvailabilityAttributes>
+              <AvailabilityType>now</AvailabilityType>
+              <MinimumHours>24</MinimumHours>
+              <MaximumHours>48</MaximumHours>
+            </AvailabilityAttributes>
+            <IsEligibleForSuperSaverShipping>0</IsEligibleForSuperSaverShipping>
+          </OfferListing>
+        </Offer>
+      </Offers>
+    </Item>
+  </Items>
+</ItemLookupResponse>

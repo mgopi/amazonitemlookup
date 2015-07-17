@@ -11,7 +11,7 @@ namespace NKCraddock.AmazonItemLookup.Client
         const string NAMESPACE_ALIAS = "aws";
         XmlDocument doc;
         XmlNamespaceManager namespaceManager;
-
+        
         public AwsXmlParser(string xml)
         {
             doc = new XmlDocument();
@@ -23,31 +23,47 @@ namespace NKCraddock.AmazonItemLookup.Client
 
         public string SelectNodeValue(string path)
         {
-            XmlNode node = SelectNode(path);
-            if (node == null)
+            return SelectNodeValue(doc, path);
+        }
+        public string SelectNodeValue(XmlNode node, string path)
+        {
+            XmlNode selectedNode = SelectNode(node, path);
+            if (selectedNode == null)
                 return null;
-            return node.Value ?? node.InnerText;
+            return selectedNode.Value ?? selectedNode.InnerText;
         }
 
         public XmlNodeList SelectNodes(string path)
         {
+            return SelectNodes(doc, path);
+        }
+
+        public XmlNodeList SelectNodes(XmlNode node, string path)
+        {
             string xpath = BuildXPath(path);
-            return doc.SelectNodes(xpath, namespaceManager);
+            return node.SelectNodes(xpath, namespaceManager);
         }
 
         public XmlNode SelectNode(string path)
         {
+            return SelectNode(doc, path);
+        }
+
+        public XmlNode SelectNode(XmlNode node, string path)
+        {
             string xpath = BuildXPath(path);
-            return doc.SelectSingleNode(xpath, namespaceManager);
+            return node.SelectSingleNode(xpath, namespaceManager);
         }
 
         private string BuildXPath(string path)
         {
             string[] elementNames = path.Split('/');
             var sb = new StringBuilder();
-            foreach (string elementName in elementNames)
+            foreach (string elementName in elementNames.Where(x=> String.IsNullOrEmpty(x) == false))
                 sb.AppendFormat("/{0}:{1}", NAMESPACE_ALIAS, elementName);
-
+            
+            if (!path.StartsWith("/"))
+                sb.Remove(0, 1);
             return sb.ToString();
         }
     }

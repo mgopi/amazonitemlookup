@@ -55,6 +55,8 @@
     <Compile Include="AwsSimilarProduct.cs" />
     <Compile Include="CartItem.cs" />
     <Compile Include="Client\AwsXmlParser.cs" />
+    <Compile Include="Client\ItemLookupRequestInfo.cs" />
+    <Compile Include="Client\ResponseGroup.cs" />
     <Compile Include="Client\Responses\CartCreateResponse.cs" />
     <Compile Include="Client\Responses\ItemLookupResponse.cs" />
     <Compile Include="Client\AwsProductApiClient.cs" />
